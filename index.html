@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Character Counter App</title>
+    <style>
+        body{
+font-family: Arial, Helvetica, sans-serif;
+background-color: #f0f0f0;
+user-select: none;
+}
+h2{
+    text-align: center;
+}
+.counter{
+    width: 80%;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+#text_input{
+    width: 100%;
+    height: 150px;
+    scrollbar-width: thin;
+    /* padding: 10px; */
+    scrollbar-color: #f0f0f0;
+    font-size: 16px;
+    border: 1px solid #ccc;
+}
+#text_input:focus{
+    outline: none;
+    border: 1px solid #66afe9;
+    box-shadow: 0 0 8px rgba(102,175,233,0.6);
+}
+p{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 16px;
+    color: #666;
+    
+}
+h3{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 1;
+     color: #666;
+}
+
+    </style>
+</head>
+<body>
+   <div class="counter">
+    <h2>Live Character Counter App</h2>
+    <textarea  placeholder="Type something..." id="text_input" spellcheck="false"></textarea>
+<p id="Character">Character : 0</p>
+<h3 id="word">Word : 0</h3>
+</div> 
+<script src="Live_character_counter.js"></script>
+</body>
+</html>
